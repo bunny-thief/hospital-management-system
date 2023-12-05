@@ -37,11 +37,11 @@ public class UserInterface {
 
 			case 2 -> System.out.println("Appointment");
 
-			case 3 -> System.out.println("Display info");
+			case 3 -> patientRegistration.getPatients().forEach(System.out::println);
 
 			default -> throw new IllegalArgumentException("Unexpected value: " + option);
 			}
-		} while (option != 0);
+		} while (option != 4);
 
 	}
 
