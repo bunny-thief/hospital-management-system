@@ -22,7 +22,10 @@ public class PatientRegistration {
 
     public void registering(Patient patient) {
         patients.add(patient);
-        System.out.println();
+        System.out.println("Patient registered successfully.");
     }
 
+    public Set<Patient> getPatients(){
+		return patients;
+	}
 }
